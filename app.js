@@ -1,3 +1,4 @@
+//Nombre : Cristofer Uscapi Baez
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let arrayAmigo = [];
 
@@ -5,7 +6,7 @@ function agregarAmigo() {
     let textAmigo = document.getElementById('amigo');
 
     if (textAmigo.value.trim() == "") {
-        alert("El cuadro de texto está vacío. Por favor, ingrese un nombre valido.");
+        alert("vacío. Por favor, ingrese un nombre valido.");
     } else {
         arrayAmigo.push(textAmigo.value);
         textAmigo.value = "";
@@ -14,7 +15,7 @@ function agregarAmigo() {
 }
 
 function listarAmigos() {
-    let listaAmigos = document.getElementById('listaAmigos');
+    let listaAmigos = document.getElementById('listAmigos');
     listaAmigos.innerHTML = "";
     arrayAmigo.forEach((amigo) => {
         let itemLista = document.createElement("li");
